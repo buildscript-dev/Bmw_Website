@@ -45,8 +45,9 @@ const Auth = () => {
         if (error) throw error;
         toast.success("Welcome back");
       }
-    } catch (err: any) {
-      toast.error(err.message ?? "Something went wrong");
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Something went wrong";
+      toast.error(message);
     } finally {
       setLoading(false);
     }

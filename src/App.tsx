@@ -5,14 +5,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/hooks/useAuth";
 import { SmoothScroll } from "@/components/SmoothScroll";
-import Index from "./pages/Index.tsx";
-import Auth from "./pages/Auth.tsx";
-import Account from "./pages/Account.tsx";
-import Services from "./pages/Services.tsx";
-import Experience from "./pages/Experience.tsx";
-import Shop from "./pages/Shop.tsx";
-import About from "./pages/About.tsx";
-import NotFound from "./pages/NotFound.tsx";
+import Index from "./pages/Index";
+import Auth from "./pages/Auth";
+import Account from "./pages/Account";
+import Services from "./pages/Services";
+import Experience from "./pages/Experience";
+import Shop from "./pages/Shop";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 

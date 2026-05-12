@@ -2,13 +2,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { HeroCar3D } from "./HeroCar3D";
-import bmw518 from "@/assets/bmw-518i.png";
 
 export const Hero = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0.94]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   return (
@@ -85,8 +84,8 @@ export const Hero = () => {
             </div>
             <div>
               <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Featured</div>
-              <h3 className="font-display text-5xl font-medium mt-2">BMW 518i</h3>
-              <div className="text-sm text-muted-foreground mt-1">E28 · 1985 · Bronzitbeige</div>
+              <h3 className="font-display text-5xl font-medium mt-2">BMW M4</h3>
+              <div className="text-sm text-muted-foreground mt-1">F82 · 2014 · Austin Yellow</div>
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
@@ -101,27 +100,17 @@ export const Hero = () => {
           </motion.div>
 
           {/* Center stage with 3D */}
-          <div className="lg:col-span-6 order-1 lg:order-2 relative aspect-[4/3]">
+          <div className="lg:col-span-6 order-1 lg:order-2 relative h-[340px] sm:h-[420px] lg:h-[500px]">
+            <div className="pointer-events-none absolute inset-x-8 bottom-12 h-20 rounded-full bg-foreground/10 blur-3xl" />
+            <div className="pointer-events-none absolute inset-x-16 bottom-20 h-px bg-gradient-to-r from-transparent via-foreground/20 to-transparent" />
             {/* 3D layer */}
-            <div className="absolute inset-0">
+            <div className="absolute -inset-x-10 inset-y-0 z-10 cursor-grab active:cursor-grabbing">
               <HeroCar3D />
             </div>
-            {/* Overlay photo for depth — fades on hover */}
-            <motion.img
-              src={bmw518}
-              alt="BMW 518i"
-              width={1536}
-              height={896}
-              className="relative z-10 w-full h-full object-contain pointer-events-none drop-shadow-2xl"
-              style={{ filter: "drop-shadow(0 40px 40px hsl(var(--foreground) / 0.25))" }}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            />
             {/* Big text behind */}
             <div aria-hidden className="absolute -inset-x-10 top-1/2 -translate-y-1/2 -z-0 text-center pointer-events-none">
               <div className="font-display text-[18vw] lg:text-[12vw] font-bold leading-none text-stroke opacity-30 select-none">
-                518i
+                M4
               </div>
             </div>
           </div>
