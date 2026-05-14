@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import bmw518 from "@/assets/bmw-518i.png";
+import { AuthCar3D } from "@/components/AuthCar3D";
 
 const Auth = () => {
   const [params] = useSearchParams();
@@ -67,22 +67,18 @@ const Auth = () => {
   return (
     <div className="min-h-screen grid lg:grid-cols-2 bg-background">
       {/* Left — visual */}
-      <div className="hidden lg:flex relative bg-primary text-primary-foreground overflow-hidden p-10">
-        <div className="absolute inset-0 bg-radial opacity-20" />
-        <div className="absolute -top-32 -right-32 size-96 rounded-full bg-accent/20 blur-3xl" />
-        <Link to="/" className="relative flex items-center gap-2 text-sm hover:text-accent transition-colors">
+      <div className="hidden lg:flex flex-col relative bg-primary text-primary-foreground overflow-hidden p-10">
+        <div className="absolute inset-0 bg-radial opacity-20 pointer-events-none" />
+        <div className="absolute -top-32 -right-32 size-96 rounded-full bg-accent/20 blur-3xl pointer-events-none" />
+        
+        <Link to="/" className="relative z-20 self-start flex items-center gap-2 text-sm hover:text-accent transition-colors">
           <ArrowLeft className="size-4" /> Back to atelier
         </Link>
 
-        <motion.img
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          src={bmw518}
-          alt=""
-          className="absolute bottom-10 -right-10 w-[120%] max-w-none drop-shadow-[0_40px_40px_rgba(0,0,0,0.5)]"
-        />
-        <div className="relative mt-auto z-10 max-w-md">
+        {/* 3D Car Model */}
+        <AuthCar3D />
+
+        <div className="relative mt-auto z-10 max-w-md pointer-events-none">
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-primary-foreground/60 mb-4">
             ─ Members
           </div>
@@ -105,7 +101,7 @@ const Auth = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-md"
+          className="w-full max-w-lg"
         >
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">
             {mode === "signup" ? "Create account" : "Welcome back"}
