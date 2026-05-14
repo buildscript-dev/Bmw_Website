@@ -34,8 +34,8 @@ export const CTASection = () => {
                   Reserve viewing
                   <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
-                <a href="mailto:atelier@bmw.com" className="inline-flex items-center gap-2 px-6 py-4 rounded-full border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 transition-all">
-                  atelier@bmw.com
+                <a href="mailto:buildscript.dev@gmail.com" className="inline-flex items-center gap-2 px-6 py-4 rounded-full border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 transition-all">
+                  buildscript.dev@gmail.com
                 </a>
               </div>
             </div>
@@ -75,7 +75,7 @@ export const Footer = () => {
               <li>Maximilianstrasse 18</li>
               <li>80539 München</li>
               <li>+49 89 244 12 80</li>
-              <li>atelier@bmw.com</li>
+              <li>buildscript.dev@gmail.com</li>
             </ul>
           </div>
         </div>
