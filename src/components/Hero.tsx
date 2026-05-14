@@ -29,7 +29,7 @@ export const Hero = () => {
         >
           <div className="flex items-center gap-2">
             <span className="size-1.5 rounded-full bg-accent animate-pulse" />
-            Munich · Est. 1994
+            Bangalore, India · Est. 1994
           </div>
           <div>Collection №24 / Ed. SS</div>
         </motion.div>

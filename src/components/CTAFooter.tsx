@@ -27,7 +27,7 @@ export const CTASection = () => {
             </div>
             <div className="space-y-6">
               <p className="text-lg text-primary-foreground/70 max-w-md">
-                By appointment only. Schedule a private viewing in Munich, or arrange a delivery worldwide.
+                By appointment only. Schedule a private viewing in Bangalore, or arrange a delivery worldwide.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a href="/auth?mode=signup" className="group inline-flex items-center gap-2 px-6 py-4 rounded-full bg-primary-foreground text-primary font-medium hover:bg-accent hover:text-accent-foreground transition-all">
@@ -54,10 +54,10 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img src="/bmw-logo.svg" alt="BMW Logo" className="size-9" />
-              <span className="font-display font-semibold tracking-tight text-lg">BMW Atelier</span>
+              <span className="font-display font-semibold tracking-tight text-lg">BMW</span>
             </div>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
-              An independent restorer and curator of significant BMW automobiles, headquartered in Munich, Germany.
+              An independent restorer and curator of significant BMW automobiles, headquartered in Bangalore, India.
             </p>
           </div>
           <div>
@@ -72,16 +72,16 @@ export const Footer = () => {
           <div>
             <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Contact</div>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Maximilianstrasse 18</li>
-              <li>80539 München</li>
-              <li>+49 89 244 12 80</li>
+              <li>Build Script</li>
+              <li>Bangalore, India</li>
+              <li>+91 9977123586</li>
               <li>buildscript.dev@gmail.com</li>
             </ul>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border flex flex-wrap justify-between items-center gap-4 font-mono text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} BMW Atelier</span>
-          <span className="tracking-widest">CRAFTED IN MUNICH</span>
+          <span>© {new Date().getFullYear()} BMW</span>
+          <span className="tracking-widest">CRAFTED IN BANGALORE</span>
         </div>
       </div>
     </footer>
