@@ -6,7 +6,7 @@ const SERVICES = [
   { num: "01", title: "Restoration", body: "Frame-off rebuilds following BMW's original factory specifications. Every nut, every torque value, documented." },
   { num: "02", title: "Sourcing", body: "Decades of contacts across Europe. We find the cars worth restoring — barn-finds, one-owners, period-correct survivors." },
   { num: "03", title: "Authentication", body: "VIN-decoded, history-traced, paint-thickness measured. A 60-page dossier accompanies every sale." },
-  { num: "04", title: "Concierge", body: "Storage, transport, track days, classic rallies. Owning a Bavaria car is an ongoing relationship." },
+  { num: "04", title: "Concierge", body: "Storage, transport, track days, classic rallies. Owning a BMW car is an ongoing relationship." },
 ];
 
 export const ServicesSection = () => {

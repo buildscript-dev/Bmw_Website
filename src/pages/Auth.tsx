@@ -39,7 +39,7 @@ const Auth = () => {
           },
         });
         if (error) throw error;
-        toast.success("Welcome to Bavaria. Check your email to confirm.");
+        toast.success("Welcome to BMW. Check your email to confirm.");
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
@@ -90,7 +90,7 @@ const Auth = () => {
             Save what moves you. <span className="font-serif-display text-accent">Always.</span>
           </h1>
           <p className="text-primary-foreground/70 mt-6">
-            A Bavaria account lets you bookmark cars, receive new arrivals first, and reserve viewings privately.
+            A BMW account lets you bookmark cars, receive new arrivals first, and reserve viewings privately.
           </p>
         </div>
       </div>
@@ -196,7 +196,7 @@ const Auth = () => {
           </form>
 
           <p className="text-sm text-muted-foreground mt-6 text-center">
-            {mode === "signup" ? "Already a member?" : "New to Bavaria?"}{" "}
+            {mode === "signup" ? "Already a member?" : "New to BMW?"}{" "}
             <button
               onClick={() => setMode(mode === "signup" ? "signin" : "signup")}
               className="text-accent hover:underline font-medium"

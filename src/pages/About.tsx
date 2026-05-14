@@ -10,7 +10,7 @@ const About = () => (
       <section className="container py-16">
         <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">─ Atelier</div>
         <h1 className="font-display text-5xl md:text-8xl font-medium tracking-tight max-w-4xl">
-          Three generations of <span className="font-serif-display text-gradient-accent">Bavarian</span> craft.
+          Three generations of <span className="font-serif-display text-gradient-accent">BMW</span> craft.
         </h1>
       </section>
 
@@ -21,7 +21,7 @@ const About = () => (
 
       <section className="container py-24 grid md:grid-cols-2 gap-12">
         <p className="font-serif-display text-3xl leading-snug">
-          Founded in 1994 by master technician Klaus Becker, Bavaria began in a single garage off the Maximilianstrasse.
+          Founded in 1994 by master technician Klaus Becker, BMW began in a single garage off the Maximilianstrasse.
         </p>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>Today the atelier occupies a 2,400 m² facility and employs eleven specialists — engine builders, trimmers, panel beaters, and electricians — all trained in the original BMW factory methods.</p>

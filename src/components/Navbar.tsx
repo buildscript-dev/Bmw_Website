@@ -50,10 +50,8 @@ export const Navbar = () => {
       >
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 px-3">
-          <div className="size-9 rounded-full bg-primary text-primary-foreground grid place-items-center font-display font-bold text-sm">
-            B
-          </div>
-          <span className="hidden sm:block font-display font-semibold tracking-tight">Bavaria</span>
+          <img src="/bmw-logo.svg" alt="BMW Logo" className="size-9" />
+          <span className="hidden sm:block font-display font-semibold tracking-tight">BMW</span>
         </Link>
 
         {/* Desktop links */}
@@ -156,7 +154,10 @@ export const Navbar = () => {
             className="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl lg:hidden"
           >
             <div className="flex justify-between items-center p-6">
-              <span className="font-display font-semibold">Bavaria</span>
+              <div className="flex items-center gap-2">
+                <img src="/bmw-logo.svg" alt="BMW Logo" className="size-8" />
+                <span className="font-display font-semibold">BMW</span>
+              </div>
               <button onClick={() => setMobileOpen(false)} className="size-10 rounded-full grid place-items-center hover:bg-secondary">
                 <X />
               </button>

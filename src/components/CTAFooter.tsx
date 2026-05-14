@@ -34,8 +34,8 @@ export const CTASection = () => {
                   Reserve viewing
                   <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
-                <a href="mailto:atelier@bavaria.com" className="inline-flex items-center gap-2 px-6 py-4 rounded-full border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 transition-all">
-                  atelier@bavaria.com
+                <a href="mailto:atelier@bmw.com" className="inline-flex items-center gap-2 px-6 py-4 rounded-full border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 transition-all">
+                  atelier@bmw.com
                 </a>
               </div>
             </div>
@@ -53,8 +53,8 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="size-9 rounded-full bg-primary text-primary-foreground grid place-items-center font-display font-bold text-sm">B</div>
-              <span className="font-display font-semibold tracking-tight text-lg">Bavaria Atelier</span>
+              <img src="/bmw-logo.svg" alt="BMW Logo" className="size-9" />
+              <span className="font-display font-semibold tracking-tight text-lg">BMW Atelier</span>
             </div>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
               An independent restorer and curator of significant BMW automobiles, headquartered in Munich, Germany.
@@ -75,12 +75,12 @@ export const Footer = () => {
               <li>Maximilianstrasse 18</li>
               <li>80539 München</li>
               <li>+49 89 244 12 80</li>
-              <li>atelier@bavaria.com</li>
+              <li>atelier@bmw.com</li>
             </ul>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border flex flex-wrap justify-between items-center gap-4 font-mono text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Bavaria Atelier · Not affiliated with BMW AG</span>
+          <span>© {new Date().getFullYear()} BMW Atelier</span>
           <span className="tracking-widest">CRAFTED IN MUNICH</span>
         </div>
       </div>
